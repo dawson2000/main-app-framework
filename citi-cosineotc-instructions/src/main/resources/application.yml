@@ -1,0 +1,27 @@
+server:
+  port: 8090
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:9000/eureka/
+    healthcheck:
+      enabled: true
+    lease:
+      duration: 5
+
+
+spring:
+  application:
+    name: cosine-otc-instruction-app
+
+
+
+
+
+
+  rabbitmq:
+    addresses: ${amqp://${RABBITMQ_HOST:localhost}:${RABBITMQ_PORT:5672}}
+
+
