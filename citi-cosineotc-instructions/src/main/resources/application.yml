@@ -17,11 +17,8 @@ spring:
     name: cosine-otc-instruction-app
 
 
-
-
-
-
   rabbitmq:
     addresses: ${amqp://${RABBITMQ_HOST:localhost}:${RABBITMQ_PORT:5672}}
-
+    password: guest
+    username: guest
 
